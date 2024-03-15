@@ -118,6 +118,7 @@ def aStarAlgo(start_node, stop_node):
         closed_set.add(n)
     print('Path does not exist!')
     return None
+```````
 #define fuction to return neighbor and its distance
 #from the passed node
 def get_neighbors(v):
