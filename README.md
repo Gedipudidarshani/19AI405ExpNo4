@@ -129,7 +129,7 @@ def get_neighbors(v):
 def heuristic(n):
     return H_dist[n]
 ``````            
-``````
+
 
 #Describe your graph here
 `````
@@ -163,7 +163,7 @@ Graph_nodes=graph
 print(graph)
 aStarAlgo('S', 'G')
 
-``````
+```````
 
 <hr>
 <h2>Sample Graph I</h2>
