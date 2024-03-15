@@ -5,6 +5,7 @@
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
 ``````
+
 // A* Search Algorithm
 1.  Initialize the open list
 2.  Initialize the closed list
@@ -37,10 +38,12 @@
      end (for loop)
     e) push q on the closed list
     end (while loop)
+    
 ``````
 <hr>
 <h2>PROGRAM</h2>
 ``````
+
 ``````
 from collections import defaultdict
 H_dist ={}
@@ -106,6 +109,7 @@ def aStarAlgo(start_node, stop_node):
     print('Path does not exist!')
     return None
 ```````
+
 #define fuction to return neighbor and its distance
 #from the passed node
 def get_neighbors(v):
@@ -118,6 +122,7 @@ def heuristic(n):
 ``````            
 #Describe your graph here
 `````
+
 '''Graph_nodes = {
     'A': [('B', 6), ('F', 3)],
     'B': [('A', 6), ('C', 3), ('D', 2)],
@@ -144,13 +149,17 @@ print(H_dist)
 Graph_nodes=graph
 print(graph)
 aStarAlgo('S', 'G')
+
 ```````
 <hr>
 <h2>Sample Graph I</h2>
+
 <hr>
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/b1377c3f-011a-4c0f-a843-516842ae056a)
 <hr>
+
 <h2>Sample Input</h2>
+
 <hr>
 10 14 <br>
 A B 6 <br>
@@ -184,7 +193,9 @@ Path found: ['A', 'F', 'G', 'I', 'J']
 <hr>
 <h2>Sample Graph II</h2>
 <hr>
+
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/acbb09cb-ed39-48e5-a59b-2f8d61b978a3)
+
 <hr>
 <h2>Sample Input</h2>
 <hr>
