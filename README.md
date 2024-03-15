@@ -52,6 +52,7 @@
 <hr>
 <h2>PROGRAM</h2>
 ``````
+
 from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
@@ -61,10 +62,10 @@ def aStarAlgo(start_node, stop_node):
     parents = {}         # parents contains an adjacency map of all nodes
     #distance of starting node from itself is zero
     g[start_node] = 0
-```````
+
     #start_node is root node i.e it has no parent nodes
     #so start_node is set to its own parent node
-``````
+
     parents[start_node] = start_node
     while len(open_set) > 0:
         n = None
@@ -97,10 +98,10 @@ def aStarAlgo(start_node, stop_node):
         if n == None:
             print('Path does not exist!')
             return None
-``````
+
         # if the current node is the stop_node
         # then we begin reconstructin the path from it to the start_node
-```````
+
         if n == stop_node:
             path = []
             while parents[n] != n:
@@ -110,18 +111,14 @@ def aStarAlgo(start_node, stop_node):
             path.reverse()
             print('Path found: {}'.format(path))
             return path
-```````
         # remove n from the open_list, and add it to closed_list
         # because all of his neighbors were inspected
-`````
         open_set.remove(n)
         closed_set.add(n)
     print('Path does not exist!')
     return None
-``````
 #define fuction to return neighbor and its distance
 #from the passed node
-`````
 def get_neighbors(v):
     if v in Graph_nodes:
         return Graph_nodes[v]
@@ -129,6 +126,7 @@ def get_neighbors(v):
         return None
 def heuristic(n):
     return H_dist[n]
+                
 ``````
 
 #Describe your graph here
