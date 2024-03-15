@@ -113,9 +113,10 @@ def aStarAlgo(start_node, stop_node):
         closed_set.add(n)
     print('Path does not exist!')
     return None
-
+``````
 #define fuction to return neighbor and its distance
 #from the passed node
+`````
 def get_neighbors(v):
     if v in Graph_nodes:
         return Graph_nodes[v]
@@ -123,9 +124,10 @@ def get_neighbors(v):
         return None
 def heuristic(n):
     return H_dist[n]
-
+``````
 
 #Describe your graph here
+`````
 '''Graph_nodes = {
     'A': [('B', 6), ('F', 3)],
     'B': [('A', 6), ('C', 3), ('D', 2)],
@@ -137,7 +139,7 @@ def heuristic(n):
     'H': [('F', 7), ('I', 2)],
     'I': [('E', 5), ('G', 3), ('H', 2), ('J', 3)],
 }
-'''
+
 graph = defaultdict(list)
 n,e = map(int,input().split())
 for i in range(e):
